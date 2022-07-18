@@ -1,0 +1,241 @@
+.pet-ui {
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 72px;
+}
+
+.screen {
+    height: 812px;
+    width: 375px;
+    border-radius: 32px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.intro {
+    background: url(./img/simon.png) center center;
+    padding: 72px 26px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+}
+
+.intro .text__title {
+    margin-bottom: 2px;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 4.8rem;
+}
+
+.intro .text__subtitle {
+    font-size: 2rem;
+    line-height: 2.4rem;
+}
+
+.next-page {
+    margin: 0 64px 0;
+    padding: 14px 58px;
+    border: 1px solid transparent;
+    border-radius: 14px;
+    background: #121212;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    color: white;
+}
+
+.next-page:active {
+    border: 1px solid white;
+}
+
+.registration {
+    padding: 100px 28px 68px;
+    background-color: #f3f3f3;
+    background-image: url(/assets/vector/prints/top_print.svg), url(/assets/vector/prints/bot_print.svg);
+    background-position: right top, left bottom;
+    background-repeat: no-repeat, no-repeat;
+}
+
+.registration__form-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.registration__form-wrapper__title {
+    margin-bottom: 34px;
+    font-weight: 800;
+    font-size: 3.4rem;
+    line-height: 4rem;
+    color: #121212;
+}
+
+.registration__form-wrapper__form-content {
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 34px;
+}
+
+.form-content__textfield {
+    padding: 10px 17px;
+    height: 46px;
+    width: 100%;
+    background: #DEDEDE;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    outline: none;
+    outline-offset: none;
+    color: #121212;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+}
+
+.form-content__textfield:hover {
+    border: 2px solid #121212;
+}
+
+.form-content__textfield::placeholder, .textfield__password::placeholder {
+    color: #989898;
+}
+
+.textfield__password {
+    min-height: fit-content;
+    min-width: 85%;
+    background: transparent;
+    outline: none;
+    outline-offset: none;
+    color: #121212;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    border: none;
+}
+
+.form-content__textfield.password {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.show-password {
+    border: none;
+    background: url(/assets/img/password_eye.png) top center no-repeat;
+}
+
+.form-content__textfield__agreevement-line {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 10px;
+    color: #989898;
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+
+.agreevement-line__flag {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.agreevement-line__flag + p {
+    display: inline-flexbox;
+    align-items: center;
+    user-select: none;
+}
+
+.agreevement-line__flag + p::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 2px solid #b3b3b3;
+    border-radius: 0.25em;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+
+.agreevement-line__flag:checked + p::before {
+    border-color: black;
+    background-color: black;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+
+/* стили при наведении курсора на checkbox */
+.agreevement-line__flag:not(:disabled):not(:checked) + abbr:hover::before {
+    border-color: #DEDEDE;
+}
+  /* стили для активного состояния чекбокса (при нажатии на него) */
+.agreevement-line__flag:not(:disabled):active + abbr::before {
+    background-color: #DEDEDE;
+    border-color: #DEDEDE;
+}
+  /* стили для чекбокса, находящегося в фокусе */
+.agreevement-line__flag:focus + abbr::before {
+    box-shadow: 0 0 0 0.2rem #b3b3b3;
+}
+  /* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+.agreevement-line__flag:focus:not(:checked) + abbr::before {
+    border-color: #DEDEDE;
+}
+
+
+.send-data {
+    padding: 14px 85px;
+    background: #121212;
+    border-radius: 14px;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color: #FFFFFF;
+}
+
+.registration__form-wrapper__signin {
+    margin-bottom: 40px;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    font-weight: 700;
+    color: #989898;
+}
+
+.registration__form-wrapper__subtitle {
+    margin-bottom: 22px;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    font-weight: 700;
+    letter-spacing: -0.03rem;
+    color: #989898;
+}
+
+.registration__form-wrapper-social_media {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.social_media-btn_wrapper {
+    padding: 15px 23px;
+    display: flex;
+    background: #121212;
+    border-radius: 6px;
+    border: none;
+}
+
+

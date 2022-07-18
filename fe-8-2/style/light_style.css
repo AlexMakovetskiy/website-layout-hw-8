@@ -1,0 +1,74 @@
+body {
+    background-color: #EEFFFB;
+    background-image: url(/assets/vector/blur/light/light_blur_top.svg), url(/assets/vector/blur/light/light_blur_bot.svg);
+    background-position: right top, left bottom;
+    background-repeat: no-repeat, no-repeat;
+    color: red;
+}
+
+.oasis-wrap__subtitle {
+    color: #71AB8F;
+}
+
+.oasis-wrap__signup-box {
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid #E4E4E4;
+}
+
+.signup-box__title {
+    color: #4A4A4A;
+}
+
+.signup-box__subtitle {
+    margin-bottom: 50px;
+    font-size: 2.2rem;
+    line-height: 2.6rem;
+    color: rgba(0, 0, 0, 0.35);
+}
+
+.signup-box__input-container {
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid #E4E4E4;
+}
+
+.input-container__input {
+    color: rgba(20, 18, 18, 0.849);
+}
+
+.input-container__input::placeholder {
+    color: rgba(0, 0, 0, 0.35);
+}
+
+.bottom-panel {
+    margin-bottom: 38px;
+    position: absolute;
+    left: 70%;
+    bottom: -30%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 54px;
+    margin-bottom: 38px;
+}
+
+.bottom-panel__following-link {
+    margin-bottom: 0;
+    border: 1px solid transparent;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(53, 143, 100, 0.42);
+}
+
+.bottom-panel__following-link p {
+    color: #358F64;
+}
+
+.bottom-panel__following-link:active {
+    border: 1px solid rgb(0, 99, 51);
+}
+
+.bottom-panel__change-mode {
+    background: transparent;
+    border: .5px solid transparent;
+}

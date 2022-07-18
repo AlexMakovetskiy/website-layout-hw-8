@@ -1,0 +1,219 @@
+body {
+    padding: 20px 400px 0;
+}
+
+.form-design {
+    padding: 26px 40px 52px;
+    max-width: 508px;
+    max-height: 666px;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 14px 10px 2px;
+    -webkit-box-shadow: 2px 2px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 2px 2px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 2px 2px 8px 0px rgba(34, 60, 80, 0.2);
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    color: rgba(93, 95, 239, 1);
+}
+
+.form-design__title {
+    margin-bottom: 20px;
+    font-size: 4.8rem;
+    line-height: 7.2rem;
+    text-transform: uppercase;
+}
+
+.form-design__registration {
+    width: 100%;
+    height: 100%;   
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+.input-content {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.inputs-wrapper {
+    padding: 14px 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    border: 2px solid #D9D9D9;
+    border-radius: .8rem;
+}
+
+.inputs-wrapper__input {
+    width: 100%;
+    border: none;
+    outline: none;
+    outline-offset: none;
+    font-weight: 200;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    color: #5D5FEF;
+}
+
+.inputs-wrapper__input::placeholder {
+    color: rgba(123, 125, 230, 0.623);
+}
+
+.form-design__subtitle {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    color: #5D5FEF;
+}
+
+.agreement-form {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    gap: 8px;
+}
+
+.devlevel-container__acceptance-wrapper {
+    margin-bottom: 14px;
+    padding: 12px 10px 12px 16px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    border: 2px solid #DADADA;
+    border-radius: 5px;
+}
+
+.acceptance-wrapper__description {
+    font-weight: 200;
+    font-size: 2.0rem;
+    line-height: 2.4rem;
+    text-align: center;
+    color: #5D5FEF;
+}
+
+.acceptance-wrapper__input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.acceptance-wrapper__input.circle + label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+  /* создание в label псевдоэлемента  before со следующими стилями */
+.acceptance-wrapper__input.circle + label::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 3px solid #5D5FEF;
+    border-radius: 50%;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+
+.acceptance-wrapper__input.circle:checked + label::before {
+    border-color: #5D5FEF;
+    background-color: #5D5FEF;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='4' fill='%23fff'/%3e%3c/svg%3e");
+}
+
+.acceptance-wrapper__input.circle:not(:disabled):not(:checked)+label:hover::before {
+    border-color: #5d5fef7c;
+}
+
+.acceptance-wrapper__input.circle:not(:disabled):active+label::before {
+    background-color: #5d5fef7c;
+    border-color: #5d5fef7c;
+}
+
+.acceptance-wrapper__input.circle:focus+label::before {
+    box-shadow: 0 0 0 0.2rem #5D5FEF;
+}
+
+.acceptance-wrapper__input.square + label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+.acceptance-wrapper__input.square + label::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 3px solid #5D5FEF;
+    border-radius: 0.25em;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+
+.acceptance-wrapper__input.square:checked + label::before {
+    border-color: #5D5FEF;
+    background-color: #5D5FEF;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+
+.acceptance-wrapper__input.square:not(:disabled):not(:checked) + label:hover::before {
+    border-color: #5d5fef79;
+}
+
+.acceptance-wrapper__input.square:not(:disabled):active + label::before {
+    background-color: #5d5fef79;
+    border-color: #5d5fef79;
+}
+
+.acceptance-wrapper__input.square:focus + label::before {
+    box-shadow: 0 0 0 0.2rem #5D5FEF;
+}
+
+.registration__send-data {
+    padding: 10px 0;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 3rem;
+    text-transform: uppercase;
+    color: white;
+    background: #5D5FEF;
+    border-radius: 5px;
+    border: 1px solid transparent;
+}
+
+.registration__send-data:hover {
+    background: #5d5fefd7;
+}
+
+.registration__send-data:active {
+    background: #5D5FEF;
+}
+
+.inputs-wrapper__input.list {
+    appearance: none;
+    overflow: hidden;
+    background: url(/assets/vector/Country-arrow-logo.svg) no-repeat right;
+}
+

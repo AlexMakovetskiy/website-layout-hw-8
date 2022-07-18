@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet UI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css/reset.css">
+    <link rel="stylesheet" href="./style.css/style.css">
+    <link rel="stylesheet" href="./style.css/common.css">
+    <script>
+        function qwe() {
+            window.open("https://www.google.com/search?q=pet+ui&oq=pet+ui+&aqs=chrome..69i57j0i15i22i30j0i22i30j0i10i22i30j0i22i30l2j69i61j69i60.2491j0j7&sourceid=chrome&ie=UTF-8", "_blank");
+        }
+
+        function asd() {
+            window.open("https://www.apple.com/ru/search/pet-ui?src=globalnav", "_blank");
+        }
+
+        function zxc() {
+            window.open("https://m.facebook.com/Dog-ui-1570979236546792/photos/", "_blank");
+        }
+    </script>
+</head>
+<body>
+    <main class="pet-ui">
+        <div class="intro screen">
+            <div class="intro__text">
+                <h1 class="text__title">We will help you find your new best friend</h1>
+                <p class="text__subtitle">Save a life, adopt a pet</p>
+            </div>
+            <button class="next-page">Start now</button> 
+        </div>
+        <div class="registration screen">
+            <div class="registration__form-wrapper">
+                <h2 class="registration__form-wrapper__title">Create account</h2>
+                <form action="/" class="registration__form-wrapper__form-content">
+                    <input type="text" class="form-content__textfield name" placeholder="Full name" maxlength="36">
+                    <input type="text" class="form-content__textfield phone-email" placeholder="Email or Phone" minlength="11" maxlength="40">
+                    <div class="form-content__textfield password">
+                        <input type="password" class="textfield__password" placeholder="Password"> 
+                        <button class="show-password" onclick="change_line_password()"></button>
+                    </div> 
+                    <div class="form-content__textfield__agreevement-line">
+                        <div class="agreevement-line__flag-wrapper">
+                            <input type="checkbox" class="agreevement-line__flag" id="agreevement-line__flag"> 
+                            <p>    </p>
+                        </div>
+                        <label for="agreevement-line__flag" class="agreevement-line__title">
+                            I agree to the and   
+                            <a href="https://policies.google.com/terms?hl=en-US" target="_blank" class="agreevement-line__title__link">Terms & Conditions</a> and
+                            <a href="https://policies.google.com/privacy?hl=en-US" target="_blank" class="agreevement-line__title__link" >Privacy Policy</a>
+                        </label>
+                    </div>  
+                    <button class="send-data">Sign up</button> 
+                </form>
+                <p class="registration__form-wrapper__signin">
+                    Already have an account? 
+                    <a href="/" class="signin__link">Join now!</a>
+                </p>
+                <p class="registration__form-wrapper__subtitle">Or sign up with</p>
+                <div class="registration__form-wrapper-social_media">
+                    <button class="social_media-btn_wrapper" onclick="qwe()" target="_blank">
+                        <img src="./assets/vector/logo/google logo.svg" alt="google logo" class="social_media-btn_wrapper__logo google">
+                    </button>
+                    <button class="social_media-btn_wrapper" onclick="asd()">
+                        <img src="./assets/vector/logo/apple logo.svg" alt="apple logo" class="social_media-btn_wrapper__logo apple">
+                    </button>
+                    <button class="social_media-btn_wrapper" onclick="zxc()">
+                        <img src="./assets/vector/logo/facebook logo.svg" alt="faceebook logo" class="social_media-btn_wrapper__logo facebook">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

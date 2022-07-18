@@ -1,0 +1,11 @@
+body {
+    background: #1E1E1E;
+}
+
+button:hover {
+    background: #202020;
+}
+
+a {
+    color: #121212;
+}

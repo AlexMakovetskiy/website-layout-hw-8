@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oasis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/common.css">
+    <link rel="stylesheet" href="./style/light_style.css">
+    <script>
+        function qwe() {
+            // window.open("./dark_mode.html", "_blank");
+            document.location.href = "./dark_mode.html";
+        }
+        function asd() {
+            window.open("https://twitter.com/oasis", "_blank");
+        }
+    </script>
+</head>
+<body>
+    <main class="oasis-wrap">
+        <img src="./assets/vector/logo/green logo.svg" alt="logo" class="oasis-wrap__logo-title">
+        <p class="oasis-wrap__subtitle">Get ready for a warm and welcoming life.</p>
+        <form action="/" class="oasis-wrap__signup-box">
+            <p class="signup-box__title">Join the waitlist</p>
+            <p class="signup-box__subtitle">Sign up with your email to know when we will launch Oasis.</p>
+            <div class="signup-box__input-container">
+                <input type="email" class="input-container__input" placeholder="E-mail address">
+                <button class="send-data">
+                    <img src="./assets/vector//dark arrow.svg" alt="button arrow" class="send-data__arrow">
+                </button>
+            </div>
+        </form>
+    </main>
+    <div class="bottom-panel">
+        <button class="bottom-panel__following-link" onclick="asd()">
+            <p class="following-link__title">Follow for us</p>
+            <img src="./assets/vector/logo/green twitter logo.svg" alt="twitter logo" class="following-link__pic">
+        </button>
+        <button class="bottom-panel__change-mode" onclick="qwe()">
+            <img src="./assets/vector/logo/switch mode.svg" alt="mode logo">
+        </button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oasis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/common.css">
+    <link rel="stylesheet" href="./style/dark_style.css">
+    <script>
+        function qwe() {
+            window.open("https://twitter.com/oasis", "_blank");
+        }
+    </script>
+</head>
+<body>
+    <main class="oasis-wrap">
+        <img src="./assets/vector/logo/white_logo.svg" alt="oasis logo" class="oasis-wrap__logo-title">
+        <p class="oasis-wrap__subtitle">Get ready for a warm and welcoming life.</p>
+        <div class="oasis-wrap__signup-box">
+            <p class="signup-box__title">Join the waitlist</p>
+            <p class="signup-box__subtitle">Sign up with your email to know when we will launch Oasis.</p>
+            <div class="signup-box__input-container">
+                <input type="text" class="input-container__input" placeholder="E-mail address">
+                <button class="send-data">
+                    <img src="./assets/vector/arrow in input.svg" alt="button arrow" class="send-data__arrow">
+                </button>
+            </div>
+        </div>
+    </main>
+    <button class="bottom-panel__following-link" onclick="qwe()">
+        <p class="following-link__title">Follow us on</p>
+        <img src="./assets/vector/logo/twitter logo.svg" alt="twitter logo" class="following-link__pic">
+    </button>
+</body>
+</html>

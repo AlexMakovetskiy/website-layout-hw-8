@@ -1,0 +1,101 @@
+body { 
+    max-width: 1512px;
+    max-height: 982px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.4rem;
+}
+.oasis-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.oasis-wrap__logo-title {
+    margin: 186px 0 38px;
+}
+
+.oasis-wrap__subtitle {
+    margin-bottom: 104px;
+    font-size: 2.6rem;
+    line-height: 3.2rem;
+}
+
+.oasis-wrap__signup-box {
+    margin-bottom: 150px;
+    padding: 26px 32px 42px 32px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.48);
+    border-radius: 30px;
+}
+
+.signup-box__title {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 2.2rem;
+    line-height: 2.6rem;
+}
+
+.signup-box__subtitle {
+    margin-bottom: 50px;
+    font-size: 2.2rem;
+    line-height: 2.6rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.signup-box__input-container {
+    padding: 16px 20px 16px 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.48);
+    border-radius: 15px;
+}
+
+.input-container__input {
+    background: transparent;
+    color: white;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    outline: none;
+    outline-offset: none;
+    border: .5px solid transparent;
+}
+
+.send-data {
+    background: transparent;
+    border: none;
+    opacity: 0.5;
+}
+
+.send-data:hover {
+    opacity: 1;
+    transition: .5s;
+}
+
+.send-data:not(hover) {
+    opacity: 0.5;
+    transition: .5s;
+}
+
+.bottom-panel__following-link {
+    margin-bottom: 38px;
+    padding: 12px 25px;
+    max-width: 205px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    border-radius: 30px;
+}
+
+.bottom-panel__following-link p {
+    font-size: 2.2rem;
+    line-height: 2.7rem;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <main class="form-design">
+        <h1 class="form-design__title">form</h1>
+        <form action="/" class="form-design__registration">
+            <div class="input-content">
+                <div class="input-content__element-container inputs-wrapper">
+                    <img class="logo" src="./assets/vector/User-logo.svg" alt="user logo">
+                    <input type="text" class="inputs-wrapper__input" placeholder="UserName">
+                </div>
+                <div class="input-content__element-container inputs-wrapper">
+                    <img class="logo" src="./assets/vector/Mail-logo.svg" alt="email logo">
+                    <input type="mail" class="inputs-wrapper__input" placeholder="E-mail">
+                </div>
+                <div class="input-content__element-container inputs-wrapper">
+                    <img class="logo" src="./assets/vector/Key-logo.svg" alt="key logo">
+                    <input type="password" class="inputs-wrapper__input" placeholder="Password">
+                </div>
+                <div class="input-content__element-container inputs-wrapper">
+                    <img class="logo" src="./assets/vector/Country-logo.svg" alt="country logo">
+                    <!-- выпадающий список -->
+                    <select class="inputs-wrapper__input list" required="required">
+                        <option value="" class="inputs-wrapper__input country" disabled selected>Country</option>
+                        <option value="France" class="inputs-wrapper__input country">France</option>
+                        <option value="Spain" class="inputs-wrapper__input country">Spain</option>
+                        <option value="Germany" class="inputs-wrapper__input country">Germany</option>
+                    </select>
+                </div> 
+            </div>
+            <h2 class="form-design__subtitle">Level of development</h2>
+            <div class="registration__devlevel-container agreement-form">
+                <div class="devlevel-container__acceptance-wrapper">
+                    <input type="radio" class="acceptance-wrapper__input circle" name="level" id="first-radio">
+                    <label for="first-radio" class="acceptance-wrapper__description">Basic</label>
+                </div>
+                <div class="devlevel-container__acceptance-wrapper">
+                    <input type="radio" class="acceptance-wrapper__input circle" name="level" id="second-radio">
+                    <label for="second-radio" class="acceptance-wrapper__description">Medium</label>
+                </div>
+                <div class="devlevel-container__acceptance-wrapper">
+                    <input type="radio" class="acceptance-wrapper__input circle" name="level" id="third-radio">
+                    <label for="third-radio" class="acceptance-wrapper__description">Advanced</label>
+                </div>
+            </div>
+            <h2 class="subtitle">Programming skills</h2>
+            <div class="registration__skills-container agreement-form">
+                <div class="devlevel-container__acceptance-wrapper">
+                    <input type="checkbox" class="acceptance-wrapper__input square" id="java-flag">
+                    <label for="java-flag" class="acceptance-wrapper__description">Java</label>
+                </div>
+                <div class="devlevel-container__acceptance-wrapper">
+                    <input type="checkbox" class="acceptance-wrapper__input square" id="python-flag">
+                    <label for="python-flag" class="acceptance-wrapper__description">Python</label>
+                </div>
+                <div class="devlevel-container__acceptance-wrapper">
+                    <input type="checkbox" class="acceptance-wrapper__input square" id="js-flag">
+                    <label for="js-flag" class="acceptance-wrapper__description">JavaScript</label>
+                </div>
+            </div>
+            <button class="registration__send-data">Send</button> 
+        </form>
+    </main>
+</body>
+</html>
